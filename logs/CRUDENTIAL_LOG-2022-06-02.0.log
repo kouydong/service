@@ -1,0 +1,891 @@
+[INFO ] 15:25:10.531 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 14364 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 15:25:10.536 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 15:25:11.613 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 15:25:11.660 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+[INFO ] 15:25:12.081 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 15:25:12.097 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 15:25:12.097 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 15:25:12.097 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 15:25:12.191 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 15:25:12.191 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1115 ms
+[INFO ] 15:25:12.363 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 15:25:12.566 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 15:25:12.644 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 15:25:12.732 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 15:25:12.919 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 15:25:13.047 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[ERROR] 15:25:13.187 o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: com.apti.service.entity.AptCashSaleBill
+[WARN ] 15:25:13.187 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.apti.service.entity.AptCashSaleBill
+[INFO ] 15:25:13.187 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 15:25:13.187 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 15:25:13.187 o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 15:25:13.219 o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 15:25:13.234 o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.apti.service.entity.AptCashSaleBill
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.apti.service.ServiceApplication.main(ServiceApplication.java:10)
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.apti.service.entity.AptCashSaleBill
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:772)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:225)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+[INFO ] 15:26:29.626 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 1376 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 15:26:29.626 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 15:26:30.134 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 15:26:30.165 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+[INFO ] 15:26:30.551 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 15:26:30.551 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 15:26:30.551 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 15:26:30.551 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 15:26:30.629 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 15:26:30.629 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 855 ms
+[INFO ] 15:26:30.769 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 15:26:30.988 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 15:26:31.019 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 15:26:31.082 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 15:26:31.222 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 15:26:31.347 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[ERROR] 15:26:31.457 o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: com.apti.service.entity.AptCashSaleBill
+[WARN ] 15:26:31.472 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.apti.service.entity.AptCashSaleBill
+[INFO ] 15:26:31.472 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 15:26:31.472 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 15:26:31.472 o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 15:26:31.472 o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 15:26:31.488 o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.apti.service.entity.AptCashSaleBill
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.apti.service.ServiceApplication.main(ServiceApplication.java:10)
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.apti.service.entity.AptCashSaleBill
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:772)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:225)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+[INFO ] 15:26:59.656 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 4396 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 15:26:59.656 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 15:27:00.160 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 15:27:00.207 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+[INFO ] 15:27:00.582 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 15:27:00.598 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 15:27:00.598 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 15:27:00.598 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 15:27:00.676 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 15:27:00.676 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 868 ms
+[INFO ] 15:27:00.832 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 15:27:01.019 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 15:27:01.051 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 15:27:01.113 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 15:27:01.238 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 15:27:01.347 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 15:27:01.613 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 15:27:01.613 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 15:27:01.613 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 15:27:01.613 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 15:27:01.894 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 15:27:01.894 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 15:27:02.191 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 15:27:02.878 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 15:27:02.894 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 15:27:02.910 com.apti.service.ServiceApplication - Started ServiceApplication in 3.573 seconds (JVM running for 3.806)
+[INFO ] 15:27:54.159 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 15:27:54.159 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 15:27:54.160 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 15:29:23.298 c.a.s.contoller.MemberController - mblToken ===>  afdsafasfasf
+[INFO ] 15:30:51.648 c.a.s.contoller.MemberController - mblToken ===>  1652933430:e9b7c5b9c656d396bb497277623f852a
+[INFO ] 15:31:06.434 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 19900 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 15:31:06.434 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 15:31:06.943 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 15:31:06.974 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+[INFO ] 15:31:07.349 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 15:31:07.364 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 15:31:07.364 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 15:31:07.364 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 15:31:07.427 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 15:31:07.427 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 846 ms
+[INFO ] 15:31:07.598 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 15:31:07.785 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 15:31:07.832 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 15:31:07.879 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 15:31:08.019 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 15:31:08.129 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 15:31:08.332 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 15:31:08.332 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 15:31:08.332 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 15:31:08.332 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 15:31:08.551 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 15:31:08.551 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 15:31:08.785 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 15:31:09.390 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 15:31:09.405 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 15:31:09.421 com.apti.service.ServiceApplication - Started ServiceApplication in 3.304 seconds (JVM running for 3.552)
+[INFO ] 15:31:23.976 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 15:31:23.977 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 15:31:23.978 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 15:31:24.001 c.a.s.contoller.MemberController - mblToken ===>  1652933430:e9b7c5b9c656d396bb497277623f852a
+[INFO ] 15:33:04.316 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 4068 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 15:33:04.316 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 15:33:04.819 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 15:33:04.865 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+[INFO ] 15:33:05.225 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 15:33:05.240 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 15:33:05.240 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 15:33:05.240 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 15:33:05.318 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 15:33:05.318 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 849 ms
+[INFO ] 15:33:05.487 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 15:33:05.675 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 15:33:05.706 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 15:33:05.753 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 15:33:05.878 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 15:33:05.987 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 15:33:06.206 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 15:33:06.206 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 15:33:06.206 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 15:33:06.206 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 15:33:06.409 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 15:33:06.409 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 15:33:06.674 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 15:33:07.284 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 15:33:07.315 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 15:33:07.315 com.apti.service.ServiceApplication - Started ServiceApplication in 3.325 seconds (JVM running for 3.568)
+[INFO ] 15:33:19.707 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 15:33:19.708 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 15:33:19.709 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 15:33:19.730 c.a.s.contoller.MemberController - mblToken ===>  1652933430:e9b7c5b9c656d396bb497277623f852a
+[INFO ] 16:03:03.435 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 5548 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 16:03:03.435 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 16:03:03.940 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 16:03:03.972 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+[INFO ] 16:03:04.346 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 16:03:04.346 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:03:04.346 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 16:03:04.346 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 16:03:04.425 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 16:03:04.425 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 830 ms
+[INFO ] 16:03:04.596 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 16:03:04.784 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 16:03:04.831 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 16:03:04.862 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 16:03:05.003 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 16:03:05.112 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 16:03:05.315 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 16:03:05.315 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 16:03:05.315 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 16:03:05.315 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 16:03:05.518 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 16:03:05.534 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 16:03:05.752 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 16:03:06.346 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:03:06.362 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 16:03:06.362 com.apti.service.ServiceApplication - Started ServiceApplication in 3.254 seconds (JVM running for 3.501)
+[INFO ] 16:03:16.182 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 16:03:16.182 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 16:03:16.183 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 16:03:16.206 c.a.s.contoller.MemberController - mblToken ===>  1652933430:e9b7c5b9c656d396bb497277623f852a
+[ERROR] 16:03:16.223 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.aeMemberDamoRepo" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.aeMemberDamoRepo" is null
+	at com.apti.service.service.AeMemberDamoService.finddMemberMenu(AeMemberDamoService.java:12)
+	at com.apti.service.contoller.MemberController.test(MemberController.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 16:04:31.812 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 8100 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 16:04:31.812 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 16:04:32.315 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 16:04:32.347 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
+[INFO ] 16:04:32.711 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 16:04:32.726 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:04:32.726 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 16:04:32.726 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 16:04:32.804 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 16:04:32.804 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 849 ms
+[INFO ] 16:04:32.961 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 16:04:33.179 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 16:04:33.226 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 16:04:33.273 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 16:04:33.398 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 16:04:33.507 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 16:04:33.695 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 16:04:33.695 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 16:04:33.695 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 16:04:33.695 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 16:04:33.913 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 16:04:33.913 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 16:04:34.163 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 16:04:34.726 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:04:34.741 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 16:04:34.757 com.apti.service.ServiceApplication - Started ServiceApplication in 3.255 seconds (JVM running for 3.49)
+[INFO ] 16:04:44.477 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 16:04:44.478 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 16:04:44.478 o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 16:04:44.504 c.a.s.contoller.MemberController - mblToken ===>  1652933430:e9b7c5b9c656d396bb497277623f852a
+[ERROR] 16:04:44.507 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.aeMemberDamoRepo" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.aeMemberDamoRepo" is null
+	at com.apti.service.service.AeMemberDamoService.finddMemberMenu(AeMemberDamoService.java:13)
+	at com.apti.service.contoller.MemberController.test(MemberController.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 16:06:39.077 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 15812 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 16:06:39.082 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 16:06:39.580 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 16:06:39.611 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+[INFO ] 16:06:39.986 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 16:06:39.986 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:06:39.986 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 16:06:39.986 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 16:06:40.064 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 16:06:40.064 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 837 ms
+[INFO ] 16:06:40.226 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 16:06:40.445 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 16:06:40.492 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 16:06:40.539 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 16:06:40.664 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 16:06:40.758 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 16:06:40.981 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 16:06:40.981 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 16:06:40.981 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 16:06:40.981 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 16:06:41.217 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 16:06:41.217 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 16:06:41.466 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 16:06:41.966 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'aeMemberDamoRepository' defined in com.apti.service.repository.AeMemberDamoRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.apti.service.repository.AeMemberDamoRepository.findByMemberMenu(java.lang.String)! Reason: Using named parameters for method public abstract java.util.List com.apti.service.repository.AeMemberDamoRepository.findByMemberMenu(java.lang.String) but parameter 'Optional[mblToken]' not found in annotated query 'SELECT AE FROM AEMEMBERDAMO AE WHERE MBL_TOKNE = :MBL_TOKEN'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract java.util.List com.apti.service.repository.AeMemberDamoRepository.findByMemberMenu(java.lang.String) but parameter 'Optional[mblToken]' not found in annotated query 'SELECT AE FROM AEMEMBERDAMO AE WHERE MBL_TOKNE = :MBL_TOKEN'!
+[INFO ] 16:06:41.966 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 16:06:41.966 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 16:06:41.966 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 16:06:41.966 o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 16:06:41.984 o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 16:06:41.999 o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'aeMemberDamoRepository' defined in com.apti.service.repository.AeMemberDamoRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.apti.service.repository.AeMemberDamoRepository.findByMemberMenu(java.lang.String)! Reason: Using named parameters for method public abstract java.util.List com.apti.service.repository.AeMemberDamoRepository.findByMemberMenu(java.lang.String) but parameter 'Optional[mblToken]' not found in annotated query 'SELECT AE FROM AEMEMBERDAMO AE WHERE MBL_TOKNE = :MBL_TOKEN'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract java.util.List com.apti.service.repository.AeMemberDamoRepository.findByMemberMenu(java.lang.String) but parameter 'Optional[mblToken]' not found in annotated query 'SELECT AE FROM AEMEMBERDAMO AE WHERE MBL_TOKNE = :MBL_TOKEN'!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.apti.service.ServiceApplication.main(ServiceApplication.java:10)
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.apti.service.repository.AeMemberDamoRepository.findByMemberMenu(java.lang.String)! Reason: Using named parameters for method public abstract java.util.List com.apti.service.repository.AeMemberDamoRepository.findByMemberMenu(java.lang.String) but parameter 'Optional[mblToken]' not found in annotated query 'SELECT AE FROM AEMEMBERDAMO AE WHERE MBL_TOKNE = :MBL_TOKEN'!; nested exception is java.lang.IllegalStateException: Using named parameters for method public abstract java.util.List com.apti.service.repository.AeMemberDamoRepository.findByMemberMenu(java.lang.String) but parameter 'Optional[mblToken]' not found in annotated query 'SELECT AE FROM AEMEMBERDAMO AE WHERE MBL_TOKNE = :MBL_TOKEN'!
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:106)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:94)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1061)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:96)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:86)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:86)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:364)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:322)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:328)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+Caused by: java.lang.IllegalStateException: Using named parameters for method public abstract java.util.List com.apti.service.repository.AeMemberDamoRepository.findByMemberMenu(java.lang.String) but parameter 'Optional[mblToken]' not found in annotated query 'SELECT AE FROM AEMEMBERDAMO AE WHERE MBL_TOKNE = :MBL_TOKEN'!
+	at org.springframework.data.jpa.repository.query.JpaQueryMethod.assertParameterNamesInAnnotatedQuery(JpaQueryMethod.java:172)
+	at org.springframework.data.jpa.repository.query.JpaQueryMethod.<init>(JpaQueryMethod.java:139)
+	at org.springframework.data.jpa.repository.query.DefaultJpaQueryMethodFactory.build(DefaultJpaQueryMethodFactory.java:44)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:87)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:102)
+	... 38 common frames omitted
+[INFO ] 16:07:17.517 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 11052 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 16:07:17.517 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 16:07:18.014 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 16:07:18.060 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+[INFO ] 16:07:18.412 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 16:07:18.428 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:07:18.428 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 16:07:18.428 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 16:07:18.505 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 16:07:18.505 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 849 ms
+[INFO ] 16:07:18.657 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 16:07:18.860 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 16:07:18.908 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 16:07:18.943 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 16:07:19.074 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 16:07:19.176 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 16:07:19.389 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 16:07:19.389 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 16:07:19.389 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 16:07:19.389 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 16:07:19.584 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 16:07:19.599 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 16:07:19.834 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[WARN ] 16:07:20.333 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'aeMemberDamoRepository' defined in com.apti.service.repository.AeMemberDamoRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.apti.service.repository.AeMemberDamoRepository.findByMemberMenu(java.lang.String)! Reason: Validation failed for query for method public abstract java.util.List com.apti.service.repository.AeMemberDamoRepository.findByMemberMenu(java.lang.String)!; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.apti.service.repository.AeMemberDamoRepository.findByMemberMenu(java.lang.String)!
+[INFO ] 16:07:20.333 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 16:07:20.333 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 16:07:20.333 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 16:07:20.333 o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 16:07:20.349 o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[ERROR] 16:07:20.365 o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'aeMemberDamoRepository' defined in com.apti.service.repository.AeMemberDamoRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.apti.service.repository.AeMemberDamoRepository.findByMemberMenu(java.lang.String)! Reason: Validation failed for query for method public abstract java.util.List com.apti.service.repository.AeMemberDamoRepository.findByMemberMenu(java.lang.String)!; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.apti.service.repository.AeMemberDamoRepository.findByMemberMenu(java.lang.String)!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.apti.service.ServiceApplication.main(ServiceApplication.java:10)
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.apti.service.repository.AeMemberDamoRepository.findByMemberMenu(java.lang.String)! Reason: Validation failed for query for method public abstract java.util.List com.apti.service.repository.AeMemberDamoRepository.findByMemberMenu(java.lang.String)!; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.apti.service.repository.AeMemberDamoRepository.findByMemberMenu(java.lang.String)!
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:106)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:94)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1061)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:96)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:86)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:86)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:364)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:322)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:328)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.apti.service.repository.AeMemberDamoRepository.findByMemberMenu(java.lang.String)!
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:96)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:66)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:51)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:163)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:252)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:87)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:102)
+	... 38 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: AEMEMBERDAMO is not mapped [SELECT AE FROM AEMEMBERDAMO AE WHERE MBL_TOKNE = :mblToken]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:138)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:757)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at jdk.proxy2/jdk.proxy2.$Proxy94.createQuery(Unknown Source)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:90)
+	... 44 common frames omitted
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: AEMEMBERDAMO is not mapped [SELECT AE FROM AEMEMBERDAMO AE WHERE MBL_TOKNE = :mblToken]
+	at org.hibernate.hql.internal.ast.QuerySyntaxException.generateQueryException(QuerySyntaxException.java:79)
+	at org.hibernate.QueryException.wrapWithQueryString(QueryException.java:103)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:220)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:636)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:748)
+	... 52 common frames omitted
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: AEMEMBERDAMO is not mapped
+	at org.hibernate.hql.internal.ast.util.SessionFactoryHelper.requireClassPersister(SessionFactoryHelper.java:170)
+	at org.hibernate.hql.internal.ast.tree.FromElementFactory.addFromElement(FromElementFactory.java:91)
+	at org.hibernate.hql.internal.ast.tree.FromClause.addFromElement(FromClause.java:77)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromElement(HqlSqlWalker.java:334)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3782)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3671)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:746)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:602)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:339)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:287)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:276)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
+	... 58 common frames omitted
+[INFO ] 16:08:01.077 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 8096 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 16:08:01.077 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 16:08:01.595 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 16:08:01.627 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+[INFO ] 16:08:02.002 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 16:08:02.002 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:08:02.002 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 16:08:02.002 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 16:08:02.080 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 16:08:02.080 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 858 ms
+[INFO ] 16:08:02.251 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 16:08:02.423 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 16:08:02.470 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 16:08:02.517 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 16:08:02.646 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 16:08:02.753 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 16:08:02.972 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 16:08:02.972 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 16:08:02.972 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 16:08:02.972 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 16:08:03.175 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 16:08:03.175 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 16:08:03.441 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 16:08:04.035 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:08:04.051 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 16:08:04.051 com.apti.service.ServiceApplication - Started ServiceApplication in 3.304 seconds (JVM running for 3.543)
+[INFO ] 16:08:12.843 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 16:08:12.843 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 16:08:12.844 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 16:08:12.864 c.a.s.contoller.MemberController - mblToken ===>  1652933430:e9b7c5b9c656d396bb497277623f852a
+[ERROR] 16:08:12.868 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.aeMemberDamoRepo" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.aeMemberDamoRepo" is null
+	at com.apti.service.service.AeMemberDamoService.finddMemberMenu(AeMemberDamoService.java:13)
+	at com.apti.service.contoller.MemberController.test(MemberController.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 16:48:38.139 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 15844 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 16:48:38.139 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 16:48:38.637 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 16:48:38.684 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+[INFO ] 16:48:39.059 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 16:48:39.059 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:48:39.059 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 16:48:39.059 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 16:48:39.137 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 16:48:39.137 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 845 ms
+[INFO ] 16:48:39.309 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 16:48:39.481 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 16:48:39.527 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 16:48:39.574 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 16:48:39.699 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 16:48:39.809 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 16:48:40.014 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 16:48:40.014 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 16:48:40.014 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 16:48:40.014 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 16:48:40.233 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 16:48:40.233 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 16:48:40.483 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 16:48:41.030 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 16:48:41.061 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 16:48:41.061 com.apti.service.ServiceApplication - Started ServiceApplication in 3.252 seconds (JVM running for 3.494)
+[INFO ] 17:19:00.225 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 21820 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 17:19:00.225 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 17:19:00.736 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 17:19:00.767 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+[INFO ] 17:19:01.142 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 17:19:01.157 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:19:01.157 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 17:19:01.157 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 17:19:01.220 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 17:19:01.220 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 842 ms
+[INFO ] 17:19:01.392 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 17:19:01.579 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 17:19:01.626 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 17:19:01.657 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 17:19:01.798 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 17:19:01.892 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 17:19:02.100 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 17:19:02.100 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 17:19:02.100 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 17:19:02.100 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 17:19:02.319 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 17:19:02.319 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 17:19:02.558 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 17:19:03.058 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 17:19:03.090 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 17:19:03.090 com.apti.service.ServiceApplication - Started ServiceApplication in 3.186 seconds (JVM running for 3.422)
+[INFO ] 17:21:23.032 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 17:21:23.032 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 17:21:23.033 o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 17:21:23.057 c.a.s.contoller.MemberController - mblToken ===>  1652933430:e9b7c5b9c656d396bb497277623f852a
+[ERROR] 17:21:23.061 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByItemDetailByNative(String)" because "this.amd" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByItemDetailByNative(String)" because "this.amd" is null
+	at com.apti.service.service.AeMemberDamoService.<init>(AeMemberDamoService.java:22)
+	at com.apti.service.contoller.MemberController.test(MemberController.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 17:46:38.638 c.a.s.s.AeMemberDamoServiceTest - Starting AeMemberDamoServiceTest using Java 17.0.2 on DESKTOP-GGBHVPK with PID 16656 (started by kouydong in C:\project\service)
+[INFO ] 17:46:38.638 c.a.s.s.AeMemberDamoServiceTest - The following 1 profile is active: "prod"
+[INFO ] 17:46:39.143 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 17:46:39.190 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+[INFO ] 17:46:39.549 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 17:46:39.737 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 17:46:39.784 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 17:46:39.830 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 17:46:39.971 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 17:46:40.080 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 17:46:40.330 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 17:46:40.330 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 17:46:40.330 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 17:46:40.330 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 17:46:40.565 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 17:46:40.580 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 17:46:40.998 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 17:46:41.676 c.a.s.s.AeMemberDamoServiceTest - Started AeMemberDamoServiceTest in 3.262 seconds (JVM running for 4.021)
+[INFO ] 17:46:41.722 o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@6a62689d testClass = AeMemberDamoServiceTest, testInstance = com.apti.service.service.AeMemberDamoServiceTest@7e8f97dd, testMethod = findMemberMenu@AeMemberDamoServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4602c2a9 testClass = AeMemberDamoServiceTest, locations = '{}', classes = '{class com.apti.service.ServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@34a875b3, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1a760689, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2250b9f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@142269f2, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2f40e5db, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@2a54a73f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@df5f657]; rollback [true]
+[TRACE] 17:46:41.931 o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [222222222]
+[INFO ] 17:46:41.965 o.s.t.c.t.TransactionContext - Rolled back transaction for test: [DefaultTestContext@6a62689d testClass = AeMemberDamoServiceTest, testInstance = com.apti.service.service.AeMemberDamoServiceTest@7e8f97dd, testMethod = findMemberMenu@AeMemberDamoServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4602c2a9 testClass = AeMemberDamoServiceTest, locations = '{}', classes = '{class com.apti.service.ServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@34a875b3, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1a760689, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2250b9f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@142269f2, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2f40e5db, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@2a54a73f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+[INFO ] 17:46:41.981 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 17:46:41.983 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 17:46:41.983 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 17:47:13.922 c.a.s.s.AeMemberDamoServiceTest - Starting AeMemberDamoServiceTest using Java 17.0.2 on DESKTOP-GGBHVPK with PID 21048 (started by kouydong in C:\project\service)
+[INFO ] 17:47:13.922 c.a.s.s.AeMemberDamoServiceTest - The following 1 profile is active: "prod"
+[INFO ] 17:47:14.435 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 17:47:14.466 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
+[INFO ] 17:47:14.841 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 17:47:15.028 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 17:47:15.075 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 17:47:15.106 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 17:47:15.247 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 17:47:15.356 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 17:47:15.559 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 17:47:15.559 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 17:47:15.559 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 17:47:15.559 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 17:47:15.778 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 17:47:15.794 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 17:47:16.169 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 17:47:16.840 c.a.s.s.AeMemberDamoServiceTest - Started AeMemberDamoServiceTest in 3.141 seconds (JVM running for 3.837)
+[INFO ] 17:47:16.887 o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@6a62689d testClass = AeMemberDamoServiceTest, testInstance = com.apti.service.service.AeMemberDamoServiceTest@268f126f, testMethod = findMemberMenu@AeMemberDamoServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4602c2a9 testClass = AeMemberDamoServiceTest, locations = '{}', classes = '{class com.apti.service.ServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@34a875b3, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1a760689, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2250b9f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@142269f2, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2f40e5db, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@2a54a73f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@487ee2a]; rollback [true]
+[TRACE] 17:47:17.043 o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1652933430:e9b7c5b9c656d396bb497277623f852a]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([code] : [VARCHAR]) - [29278]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([userid] : [VARCHAR]) - [kouydong]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([code] : [VARCHAR]) - [29278]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([userid] : [VARCHAR]) - [kouydong]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([addr1] : [VARCHAR]) - [경기도 의정부시 가능동 717-22]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([addr2] : [VARCHAR]) - []
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([apt_dong] : [VARCHAR]) - [101]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([apt_ho] : [VARCHAR]) - [202]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiinfoagree] : [VARCHAR]) - [Y]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiinfoagreedt] : [VARCHAR]) - [20220414]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiout_yn] : [VARCHAR]) - [N]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([authgubu] : [VARCHAR]) - [S]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([birthday] : [VARCHAR]) - [--]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([birthday_gubu] : [VARCHAR]) - [1]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([car_n] : [INTEGER]) - [0]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([car_num] : [VARCHAR]) - []
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([daninfoagree] : [VARCHAR]) - [Y]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([daninfoagreedt] : [VARCHAR]) - [20220414]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([danout_yn] : [VARCHAR]) - [N]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([donghomeinsert] : [VARCHAR]) - [N]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([email] : [VARCHAR]) - [kouydong@gmai.com]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([email_yn] : [VARCHAR]) - [N]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foregubu] : [VARCHAR]) - [9]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foreverout] : [VARCHAR]) - [N]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foreveroutdate] : [VARCHAR]) - [null]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([gubu] : [VARCHAR]) - [I]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([ipinci] : [VARCHAR]) - [KD6PdT9Z+atlq3hMRjbMAnVv/UaHZG6Ss0pmxnR7NvypGpU6GKH3sGyL+B3rlgms6+h+r73P6tvHvgHCESsY+w==]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([ipindi] : [VARCHAR]) - [MC0GCCqGSIb3DQIJAyEA56YsqtnX5upDGkVjjmDuvm0nUsBFZ5Tm6YN0094qubs=]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job] : [VARCHAR]) - []
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job_name] : [VARCHAR]) - []
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job_position] : [VARCHAR]) - []
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([jumin] : [VARCHAR]) - [null]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([login] : [INTEGER]) - [25]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([m_level] : [INTEGER]) - [10]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([marketing1] : [VARCHAR]) - [N]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([mbl_token] : [VARCHAR]) - [1652933430:e9b7c5b9c656d396bb497277623f852a]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([name] : [VARCHAR]) - [고의동]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([nickname] : [VARCHAR]) - [고의동]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([out_yn] : [VARCHAR]) - [N]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([outcontent] : [VARCHAR]) - [null]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([outdate] : [VARCHAR]) - [null]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd] : [VARCHAR]) - [jFU+05aUhkZpPVjLIWAf6EmsL6823qD1k4zToWqQP/E=]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd_answer] : [VARCHAR]) - []
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd_hint] : [VARCHAR]) - [1]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([recomid] : [VARCHAR]) - [null]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([regdate] : [VARCHAR]) - [2022-04-14 10:30:34.42]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([relogin] : [VARCHAR]) - [2022-06-02 15:51:28.27]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([row_id] : [VARCHAR]) - [071E2D15-67D1-48AB-983F-B3D416C6B4F4]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([se_chk] : [VARCHAR]) - [N]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([se_name] : [VARCHAR]) - [고의동]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sec_jumin] : [VARCHAR]) - [null]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sex] : [VARCHAR]) - [1]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiinfoagree] : [VARCHAR]) - [N]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiinfoagreedt] : [VARCHAR]) - [null]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiout_yn] : [VARCHAR]) - [N]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sms_yn] : [VARCHAR]) - [Y]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([stopaccount_yn] : [VARCHAR]) - [N]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([tel] : [VARCHAR]) - [--]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([telecom] : [VARCHAR]) - []
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([whereis] : [VARCHAR]) - [U]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([whereis2] : [VARCHAR]) - [  ]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([zipcode] : [VARCHAR]) - [480-812]
+[TRACE] 17:47:17.075 o.h.t.descriptor.sql.BasicExtractor - extracted value ([zisacode] : [VARCHAR]) - [null]
+[INFO ] 17:47:17.137 o.s.t.c.t.TransactionContext - Rolled back transaction for test: [DefaultTestContext@6a62689d testClass = AeMemberDamoServiceTest, testInstance = com.apti.service.service.AeMemberDamoServiceTest@268f126f, testMethod = findMemberMenu@AeMemberDamoServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4602c2a9 testClass = AeMemberDamoServiceTest, locations = '{}', classes = '{class com.apti.service.ServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@34a875b3, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1a760689, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2250b9f2, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@142269f2, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2f40e5db, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@2a54a73f], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+[INFO ] 17:47:17.153 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 17:47:17.153 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 17:47:17.153 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

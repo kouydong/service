@@ -1,0 +1,50 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.6'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.apti'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	// Gson라이브러리추가
+	implementation 'com.google.code.gson:gson:2.8.7'
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+
+	// MSSQL 데이터에비스 의존성 추가
+	runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc'
+
+	//─────────────────────────────────────────────────────────────────────────────
+	//	타임리프를사용하기위한의존성추가
+	//─────────────────────────────────────────────────────────────────────────────
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	//─────────────────────────────────────────────────────────────────────────────
+	//	타임리프페이지레이아웃을위한의존성추가
+	//─────────────────────────────────────────────────────────────────────────────
+	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
+	//─────────────────────────────────────────────────────────────────────────────
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

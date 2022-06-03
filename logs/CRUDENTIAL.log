@@ -1,0 +1,1425 @@
+[WARN ] 09:15:21.534 com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h55m44s246ms494µs500ns).
+[INFO ] 13:46:51.942 c.a.s.s.AeMemberDamoServiceTest - Starting AeMemberDamoServiceTest using Java 17.0.2 on DESKTOP-GGBHVPK with PID 17208 (started by kouydong in C:\project\service)
+[INFO ] 13:46:51.942 c.a.s.s.AeMemberDamoServiceTest - The following 1 profile is active: "prod"
+[INFO ] 13:46:52.446 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 13:46:52.477 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
+[INFO ] 13:46:52.852 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 13:46:53.040 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 13:46:53.087 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 13:46:53.118 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 13:46:53.274 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 13:46:53.383 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 13:46:53.587 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 13:46:53.587 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 13:46:53.587 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 13:46:53.587 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 13:46:53.805 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 13:46:53.805 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 13:46:54.196 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 13:46:54.867 c.a.s.s.AeMemberDamoServiceTest - Started AeMemberDamoServiceTest in 3.149 seconds (JVM running for 3.899)
+[INFO ] 13:46:54.899 o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@591e58fa testClass = AeMemberDamoServiceTest, testInstance = com.apti.service.service.AeMemberDamoServiceTest@4fcb796f, testMethod = jsonTest@AeMemberDamoServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3954d008 testClass = AeMemberDamoServiceTest, locations = '{}', classes = '{class com.apti.service.ServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@146587a2, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6bbe2511, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4dd02341, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@495b0487, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5d5f10b2, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@16610890], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@75c45c4b]; rollback [true]
+[INFO ] 13:46:55.024 o.s.t.c.t.TransactionContext - Rolled back transaction for test: [DefaultTestContext@591e58fa testClass = AeMemberDamoServiceTest, testInstance = com.apti.service.service.AeMemberDamoServiceTest@4fcb796f, testMethod = jsonTest@AeMemberDamoServiceTest, testException = org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [java.lang.String mblToken] in method [public void com.apti.service.service.AeMemberDamoServiceTest.jsonTest(java.lang.String)]., mergedContextConfiguration = [WebMergedContextConfiguration@3954d008 testClass = AeMemberDamoServiceTest, locations = '{}', classes = '{class com.apti.service.ServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@146587a2, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6bbe2511, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4dd02341, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@495b0487, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5d5f10b2, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@16610890], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+[INFO ] 13:46:55.039 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 13:46:55.039 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 13:46:55.055 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 13:52:20.434 c.a.s.s.AeMemberDamoServiceTest - Starting AeMemberDamoServiceTest using Java 17.0.2 on DESKTOP-GGBHVPK with PID 2200 (started by kouydong in C:\project\service)
+[INFO ] 13:52:20.434 c.a.s.s.AeMemberDamoServiceTest - The following 1 profile is active: "prod"
+[INFO ] 13:52:20.926 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 13:52:20.972 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+[INFO ] 13:52:21.332 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 13:52:21.702 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 13:52:21.749 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 13:52:21.796 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 13:52:21.921 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 13:52:22.030 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 13:52:22.296 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 13:52:22.296 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 13:52:22.312 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 13:52:22.312 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 13:52:22.561 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 13:52:22.561 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 13:52:22.983 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 13:52:23.733 c.a.s.s.AeMemberDamoServiceTest - Started AeMemberDamoServiceTest in 3.513 seconds (JVM running for 4.244)
+[INFO ] 13:52:23.764 o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@591e58fa testClass = AeMemberDamoServiceTest, testInstance = com.apti.service.service.AeMemberDamoServiceTest@7ab8f93, testMethod = jsonTest@AeMemberDamoServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3954d008 testClass = AeMemberDamoServiceTest, locations = '{}', classes = '{class com.apti.service.ServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@146587a2, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6bbe2511, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4dd02341, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@495b0487, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5d5f10b2, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@16610890], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@3ae91bcc]; rollback [true]
+[INFO ] 13:52:23.905 o.s.t.c.t.TransactionContext - Rolled back transaction for test: [DefaultTestContext@591e58fa testClass = AeMemberDamoServiceTest, testInstance = com.apti.service.service.AeMemberDamoServiceTest@7ab8f93, testMethod = jsonTest@AeMemberDamoServiceTest, testException = org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [java.lang.String mblToken] in method [public void com.apti.service.service.AeMemberDamoServiceTest.jsonTest(java.lang.String)]., mergedContextConfiguration = [WebMergedContextConfiguration@3954d008 testClass = AeMemberDamoServiceTest, locations = '{}', classes = '{class com.apti.service.ServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@146587a2, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6bbe2511, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4dd02341, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@495b0487, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5d5f10b2, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@16610890], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+[INFO ] 13:52:23.921 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 13:52:23.921 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 13:52:23.921 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 13:53:08.600 c.a.s.s.AeMemberDamoServiceTest - Starting AeMemberDamoServiceTest using Java 17.0.2 on DESKTOP-GGBHVPK with PID 22476 (started by kouydong in C:\project\service)
+[INFO ] 13:53:08.615 c.a.s.s.AeMemberDamoServiceTest - The following 1 profile is active: "prod"
+[INFO ] 13:53:09.106 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 13:53:09.138 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
+[INFO ] 13:53:09.513 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 13:53:09.720 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 13:53:09.766 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 13:53:09.798 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 13:53:09.938 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 13:53:10.048 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 13:53:10.266 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 13:53:10.266 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 13:53:10.266 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 13:53:10.266 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 13:53:10.485 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 13:53:10.485 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 13:53:10.907 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 13:53:11.625 c.a.s.s.AeMemberDamoServiceTest - Started AeMemberDamoServiceTest in 3.245 seconds (JVM running for 3.968)
+[INFO ] 13:53:11.657 o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@6c6357f9 testClass = AeMemberDamoServiceTest, testInstance = com.apti.service.service.AeMemberDamoServiceTest@7e4a6afd, testMethod = jsonTest@AeMemberDamoServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@591e58fa testClass = AeMemberDamoServiceTest, locations = '{}', classes = '{class com.apti.service.ServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@50468873, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6127a7e, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@79d94571, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7a1a3478, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5023bb8b, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@16610890], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@59172d2]; rollback [true]
+[INFO ] 13:53:11.813 o.s.t.c.t.TransactionContext - Rolled back transaction for test: [DefaultTestContext@6c6357f9 testClass = AeMemberDamoServiceTest, testInstance = com.apti.service.service.AeMemberDamoServiceTest@7e4a6afd, testMethod = jsonTest@AeMemberDamoServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@591e58fa testClass = AeMemberDamoServiceTest, locations = '{}', classes = '{class com.apti.service.ServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@50468873, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6127a7e, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@79d94571, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7a1a3478, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5023bb8b, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@16610890], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+[INFO ] 13:53:11.813 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 13:53:11.813 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 13:53:11.813 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 13:59:00.978 c.a.s.s.AeMemberDamoServiceTest - Starting AeMemberDamoServiceTest using Java 17.0.2 on DESKTOP-GGBHVPK with PID 19148 (started by kouydong in C:\project\service)
+[INFO ] 13:59:00.978 c.a.s.s.AeMemberDamoServiceTest - The following 1 profile is active: "prod"
+[INFO ] 13:59:01.482 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 13:59:01.529 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+[INFO ] 13:59:01.888 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 13:59:02.060 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 13:59:02.107 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 13:59:02.154 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 13:59:02.294 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 13:59:02.403 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 13:59:02.622 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 13:59:02.622 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 13:59:02.622 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 13:59:02.622 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 13:59:02.841 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 13:59:02.857 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 13:59:03.236 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 13:59:03.961 c.a.s.s.AeMemberDamoServiceTest - Started AeMemberDamoServiceTest in 3.202 seconds (JVM running for 3.929)
+[INFO ] 13:59:03.992 o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@6c6357f9 testClass = AeMemberDamoServiceTest, testInstance = com.apti.service.service.AeMemberDamoServiceTest@4fcb796f, testMethod = jsonTest@AeMemberDamoServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@591e58fa testClass = AeMemberDamoServiceTest, locations = '{}', classes = '{class com.apti.service.ServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@50468873, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6127a7e, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@79d94571, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7a1a3478, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5023bb8b, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@16610890], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@75c45c4b]; rollback [true]
+[TRACE] 13:59:04.133 o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1652933430:e9b7c5b9c656d396bb497277623f852a]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([code] : [VARCHAR]) - [29278]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([userid] : [VARCHAR]) - [kouydong]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([code] : [VARCHAR]) - [29278]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([userid] : [VARCHAR]) - [kouydong]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([addr1] : [VARCHAR]) - [경기도 의정부시 가능동 717-22]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([addr2] : [VARCHAR]) - []
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([apt_dong] : [VARCHAR]) - [101]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([apt_ho] : [VARCHAR]) - [202]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiinfoagree] : [VARCHAR]) - [Y]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiinfoagreedt] : [VARCHAR]) - [20220414]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiout_yn] : [VARCHAR]) - [N]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([authgubu] : [VARCHAR]) - [S]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([birthday] : [VARCHAR]) - [--]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([birthday_gubu] : [VARCHAR]) - [1]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([car_n] : [INTEGER]) - [0]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([car_num] : [VARCHAR]) - []
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([daninfoagree] : [VARCHAR]) - [Y]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([daninfoagreedt] : [VARCHAR]) - [20220414]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([danout_yn] : [VARCHAR]) - [N]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([donghomeinsert] : [VARCHAR]) - [N]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([email] : [VARCHAR]) - [kouydong@gmai.com]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([email_yn] : [VARCHAR]) - [N]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foregubu] : [VARCHAR]) - [9]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foreverout] : [VARCHAR]) - [N]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foreveroutdate] : [VARCHAR]) - [null]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([gubu] : [VARCHAR]) - [I]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([ipinci] : [VARCHAR]) - [KD6PdT9Z+atlq3hMRjbMAnVv/UaHZG6Ss0pmxnR7NvypGpU6GKH3sGyL+B3rlgms6+h+r73P6tvHvgHCESsY+w==]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([ipindi] : [VARCHAR]) - [MC0GCCqGSIb3DQIJAyEA56YsqtnX5upDGkVjjmDuvm0nUsBFZ5Tm6YN0094qubs=]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job] : [VARCHAR]) - []
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job_name] : [VARCHAR]) - []
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job_position] : [VARCHAR]) - []
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([jumin] : [VARCHAR]) - [null]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([login] : [INTEGER]) - [25]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([m_level] : [INTEGER]) - [10]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([marketing1] : [VARCHAR]) - [N]
+[TRACE] 13:59:04.149 o.h.t.descriptor.sql.BasicExtractor - extracted value ([mbl_token] : [VARCHAR]) - [1652933430:e9b7c5b9c656d396bb497277623f852a]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([name] : [VARCHAR]) - [고의동]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([nickname] : [VARCHAR]) - [고의동]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([out_yn] : [VARCHAR]) - [N]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([outcontent] : [VARCHAR]) - [null]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([outdate] : [VARCHAR]) - [null]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd] : [VARCHAR]) - [jFU+05aUhkZpPVjLIWAf6EmsL6823qD1k4zToWqQP/E=]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd_answer] : [VARCHAR]) - []
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd_hint] : [VARCHAR]) - [1]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([recomid] : [VARCHAR]) - [null]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([regdate] : [VARCHAR]) - [2022-04-14 10:30:34.42]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([relogin] : [VARCHAR]) - [2022-06-02 15:51:28.27]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([row_id] : [VARCHAR]) - [071E2D15-67D1-48AB-983F-B3D416C6B4F4]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([se_chk] : [VARCHAR]) - [N]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([se_name] : [VARCHAR]) - [고의동]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sec_jumin] : [VARCHAR]) - [null]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sex] : [VARCHAR]) - [1]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiinfoagree] : [VARCHAR]) - [N]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiinfoagreedt] : [VARCHAR]) - [null]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiout_yn] : [VARCHAR]) - [N]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sms_yn] : [VARCHAR]) - [Y]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([stopaccount_yn] : [VARCHAR]) - [N]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([tel] : [VARCHAR]) - [--]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([telecom] : [VARCHAR]) - []
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([whereis] : [VARCHAR]) - [U]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([whereis2] : [VARCHAR]) - [  ]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([zipcode] : [VARCHAR]) - [480-812]
+[TRACE] 13:59:04.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([zisacode] : [VARCHAR]) - [null]
+[INFO ] 13:59:04.180 o.s.t.c.t.TransactionContext - Rolled back transaction for test: [DefaultTestContext@6c6357f9 testClass = AeMemberDamoServiceTest, testInstance = com.apti.service.service.AeMemberDamoServiceTest@4fcb796f, testMethod = jsonTest@AeMemberDamoServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@591e58fa testClass = AeMemberDamoServiceTest, locations = '{}', classes = '{class com.apti.service.ServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@50468873, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6127a7e, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@79d94571, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7a1a3478, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@5023bb8b, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@16610890], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+[INFO ] 13:59:04.180 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 13:59:04.180 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 13:59:04.196 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 14:00:03.520 c.a.s.s.AeMemberDamoServiceTest - Starting AeMemberDamoServiceTest using Java 17.0.2 on DESKTOP-GGBHVPK with PID 14536 (started by kouydong in C:\project\service)
+[INFO ] 14:00:03.520 c.a.s.s.AeMemberDamoServiceTest - The following 1 profile is active: "prod"
+[INFO ] 14:00:04.023 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 14:00:04.055 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+[INFO ] 14:00:04.429 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 14:00:04.617 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 14:00:04.664 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 14:00:04.695 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 14:00:04.851 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 14:00:04.961 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 14:00:05.179 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:00:05.179 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:00:05.179 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 14:00:05.179 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 14:00:05.398 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 14:00:05.398 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 14:00:05.788 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 14:00:06.524 c.a.s.s.AeMemberDamoServiceTest - Started AeMemberDamoServiceTest in 3.227 seconds (JVM running for 3.936)
+[INFO ] 14:00:06.571 o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@63cd604c testClass = AeMemberDamoServiceTest, testInstance = com.apti.service.service.AeMemberDamoServiceTest@7e9ea888, testMethod = jsonTest@AeMemberDamoServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@40dd3977 testClass = AeMemberDamoServiceTest, locations = '{}', classes = '{class com.apti.service.ServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@2df6226d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1e636ea3, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@63f8276e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6bbe2511, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@67304a40, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@505fc5a4], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@258291de]; rollback [true]
+[TRACE] 14:00:06.727 o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1652933430:e9b7c5b9c656d396bb497277623f852a]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([code] : [VARCHAR]) - [29278]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([userid] : [VARCHAR]) - [kouydong]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([code] : [VARCHAR]) - [29278]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([userid] : [VARCHAR]) - [kouydong]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([addr1] : [VARCHAR]) - [경기도 의정부시 가능동 717-22]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([addr2] : [VARCHAR]) - []
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([apt_dong] : [VARCHAR]) - [101]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([apt_ho] : [VARCHAR]) - [202]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiinfoagree] : [VARCHAR]) - [Y]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiinfoagreedt] : [VARCHAR]) - [20220414]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiout_yn] : [VARCHAR]) - [N]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([authgubu] : [VARCHAR]) - [S]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([birthday] : [VARCHAR]) - [--]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([birthday_gubu] : [VARCHAR]) - [1]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([car_n] : [INTEGER]) - [0]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([car_num] : [VARCHAR]) - []
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([daninfoagree] : [VARCHAR]) - [Y]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([daninfoagreedt] : [VARCHAR]) - [20220414]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([danout_yn] : [VARCHAR]) - [N]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([donghomeinsert] : [VARCHAR]) - [N]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([email] : [VARCHAR]) - [kouydong@gmai.com]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([email_yn] : [VARCHAR]) - [N]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foregubu] : [VARCHAR]) - [9]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foreverout] : [VARCHAR]) - [N]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foreveroutdate] : [VARCHAR]) - [null]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([gubu] : [VARCHAR]) - [I]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([ipinci] : [VARCHAR]) - [KD6PdT9Z+atlq3hMRjbMAnVv/UaHZG6Ss0pmxnR7NvypGpU6GKH3sGyL+B3rlgms6+h+r73P6tvHvgHCESsY+w==]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([ipindi] : [VARCHAR]) - [MC0GCCqGSIb3DQIJAyEA56YsqtnX5upDGkVjjmDuvm0nUsBFZ5Tm6YN0094qubs=]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job] : [VARCHAR]) - []
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job_name] : [VARCHAR]) - []
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job_position] : [VARCHAR]) - []
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([jumin] : [VARCHAR]) - [null]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([login] : [INTEGER]) - [25]
+[TRACE] 14:00:06.743 o.h.t.descriptor.sql.BasicExtractor - extracted value ([m_level] : [INTEGER]) - [10]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([marketing1] : [VARCHAR]) - [N]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([mbl_token] : [VARCHAR]) - [1652933430:e9b7c5b9c656d396bb497277623f852a]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([name] : [VARCHAR]) - [고의동]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([nickname] : [VARCHAR]) - [고의동]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([out_yn] : [VARCHAR]) - [N]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([outcontent] : [VARCHAR]) - [null]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([outdate] : [VARCHAR]) - [null]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd] : [VARCHAR]) - [jFU+05aUhkZpPVjLIWAf6EmsL6823qD1k4zToWqQP/E=]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd_answer] : [VARCHAR]) - []
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd_hint] : [VARCHAR]) - [1]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([recomid] : [VARCHAR]) - [null]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([regdate] : [VARCHAR]) - [2022-04-14 10:30:34.42]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([relogin] : [VARCHAR]) - [2022-06-02 15:51:28.27]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([row_id] : [VARCHAR]) - [071E2D15-67D1-48AB-983F-B3D416C6B4F4]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([se_chk] : [VARCHAR]) - [N]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([se_name] : [VARCHAR]) - [고의동]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sec_jumin] : [VARCHAR]) - [null]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sex] : [VARCHAR]) - [1]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiinfoagree] : [VARCHAR]) - [N]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiinfoagreedt] : [VARCHAR]) - [null]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiout_yn] : [VARCHAR]) - [N]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sms_yn] : [VARCHAR]) - [Y]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([stopaccount_yn] : [VARCHAR]) - [N]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([tel] : [VARCHAR]) - [--]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([telecom] : [VARCHAR]) - []
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([whereis] : [VARCHAR]) - [U]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([whereis2] : [VARCHAR]) - [  ]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([zipcode] : [VARCHAR]) - [480-812]
+[TRACE] 14:00:06.759 o.h.t.descriptor.sql.BasicExtractor - extracted value ([zisacode] : [VARCHAR]) - [null]
+[INFO ] 14:00:06.774 o.s.t.c.t.TransactionContext - Rolled back transaction for test: [DefaultTestContext@63cd604c testClass = AeMemberDamoServiceTest, testInstance = com.apti.service.service.AeMemberDamoServiceTest@7e9ea888, testMethod = jsonTest@AeMemberDamoServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@40dd3977 testClass = AeMemberDamoServiceTest, locations = '{}', classes = '{class com.apti.service.ServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@2df6226d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1e636ea3, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@63f8276e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@6bbe2511, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@67304a40, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@505fc5a4], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+[INFO ] 14:00:06.774 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 14:00:06.774 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 14:00:06.790 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 14:07:51.351 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 20784 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 14:07:51.351 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 14:07:51.853 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 14:07:51.900 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+[INFO ] 14:07:52.274 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 14:07:52.274 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:07:52.274 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 14:07:52.274 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 14:07:52.352 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 14:07:52.352 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 849 ms
+[INFO ] 14:07:52.524 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 14:07:52.727 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 14:07:52.773 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 14:07:52.820 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 14:07:52.977 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 14:07:53.086 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 14:07:53.305 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:07:53.305 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:07:53.305 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 14:07:53.305 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 14:07:53.508 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 14:07:53.508 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 14:07:53.758 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 14:07:54.273 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:07:54.289 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 14:07:54.289 com.apti.service.ServiceApplication - Started ServiceApplication in 3.263 seconds (JVM running for 3.636)
+[INFO ] 14:08:38.117 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 14:08:38.118 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 14:08:38.118 o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 14:08:38.142 c.a.s.contoller.MemberController - mblToken ===>  1652933430:e9b7c5b9c656d396bb497277623f852a
+[ERROR] 14:08:38.145 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.amdRepo" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.amdRepo" is null
+	at com.apti.service.service.AeMemberDamoService.findMemberInfo(AeMemberDamoService.java:25)
+	at com.apti.service.contoller.MemberController.test(MemberController.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 14:27:36.036 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 17852 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 14:27:36.049 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 14:27:36.548 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 14:27:36.600 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+[INFO ] 14:27:36.958 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 14:27:36.974 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:27:36.974 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 14:27:36.974 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 14:27:37.052 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 14:27:37.052 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 855 ms
+[INFO ] 14:27:37.211 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 14:27:37.445 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 14:27:37.492 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 14:27:37.539 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 14:27:37.695 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 14:27:37.812 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 14:27:38.003 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:27:38.003 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:27:38.003 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 14:27:38.003 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 14:27:38.208 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 14:27:38.223 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 14:27:38.458 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 14:27:38.942 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:27:38.973 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 14:27:38.973 com.apti.service.ServiceApplication - Started ServiceApplication in 3.256 seconds (JVM running for 3.496)
+[INFO ] 14:28:05.496 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 14:28:05.496 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 14:28:05.497 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 14:28:05.521 c.a.s.contoller.MemberController - mblToken ===>  1652933430:e9b7c5b9c656d396bb497277623f852a
+[ERROR] 14:28:05.524 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.amdRepo" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.amdRepo" is null
+	at com.apti.service.service.AeMemberDamoService.findMemberInfo(AeMemberDamoService.java:26)
+	at com.apti.service.contoller.MemberController.test(MemberController.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 14:29:33.378 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 18468 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 14:29:33.378 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 14:29:33.885 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 14:29:33.932 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+[INFO ] 14:29:34.307 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 14:29:34.307 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:29:34.307 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 14:29:34.307 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 14:29:34.385 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 14:29:34.385 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 852 ms
+[INFO ] 14:29:34.541 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 14:29:34.760 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 14:29:34.807 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 14:29:34.854 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 14:29:35.010 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 14:29:35.119 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 14:29:35.322 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:29:35.322 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:29:35.322 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 14:29:35.322 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 14:29:35.526 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 14:29:35.526 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 14:29:35.822 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 14:29:36.275 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:29:36.291 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 14:29:36.307 com.apti.service.ServiceApplication - Started ServiceApplication in 3.243 seconds (JVM running for 3.478)
+[INFO ] 14:29:44.097 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 14:29:44.098 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 14:29:44.098 o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 14:29:44.122 c.a.s.contoller.MemberController - mblToken ===>  1652933430:e9b7c5b9c656d396bb497277623f852a
+[ERROR] 14:29:44.125 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.amdRepo" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.amdRepo" is null
+	at com.apti.service.service.AeMemberDamoService.findMemberInfo(AeMemberDamoService.java:29)
+	at com.apti.service.contoller.MemberController.test(MemberController.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 14:30:53.242 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 20996 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 14:30:53.247 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 14:30:53.744 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 14:30:53.776 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+[INFO ] 14:30:54.164 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 14:30:54.170 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:30:54.170 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 14:30:54.170 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 14:30:54.240 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 14:30:54.240 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 843 ms
+[INFO ] 14:30:54.397 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 14:30:54.615 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 14:30:54.662 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 14:30:54.709 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 14:30:54.834 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 14:30:54.943 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 14:30:55.146 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:30:55.146 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:30:55.146 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 14:30:55.146 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 14:30:55.365 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 14:30:55.365 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 14:30:55.599 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 14:30:56.052 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:30:56.068 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 14:30:56.084 com.apti.service.ServiceApplication - Started ServiceApplication in 3.161 seconds (JVM running for 3.395)
+[INFO ] 14:31:03.217 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 14:31:03.217 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 14:31:03.218 o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 14:31:03.242 c.a.s.contoller.MemberController - mblToken ===>  1652933430:e9b7c5b9c656d396bb497277623f852a
+[ERROR] 14:31:03.245 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.amdRepo" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.amdRepo" is null
+	at com.apti.service.service.AeMemberDamoService.findMemberInfo(AeMemberDamoService.java:30)
+	at com.apti.service.contoller.MemberController.test(MemberController.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 14:32:06.878 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 14692 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 14:32:06.878 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 14:32:07.389 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 14:32:07.420 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+[INFO ] 14:32:07.811 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 14:32:07.811 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:32:07.811 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 14:32:07.811 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 14:32:07.889 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 14:32:07.889 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 853 ms
+[INFO ] 14:32:08.045 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 14:32:08.373 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 14:32:08.420 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 14:32:08.467 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 14:32:08.608 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 14:32:08.717 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 14:32:08.918 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:32:08.918 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:32:08.918 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 14:32:08.918 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 14:32:09.118 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 14:32:09.118 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 14:32:09.352 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 14:32:09.862 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:32:09.894 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 14:32:09.894 com.apti.service.ServiceApplication - Started ServiceApplication in 3.334 seconds (JVM running for 3.57)
+[INFO ] 14:32:15.517 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 14:32:15.518 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 14:32:15.519 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 14:32:15.543 c.a.s.contoller.MemberController - mblToken ===>  1652933430:e9b7c5b9c656d396bb497277623f852a
+[ERROR] 14:32:15.546 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.amdRepo" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.amdRepo" is null
+	at com.apti.service.service.AeMemberDamoService.findMemberInfo(AeMemberDamoService.java:30)
+	at com.apti.service.contoller.MemberController.test(MemberController.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 14:36:21.399 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 18224 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 14:36:21.399 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 14:36:21.890 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 14:36:21.937 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+[INFO ] 14:36:22.327 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 14:36:22.327 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:36:22.327 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 14:36:22.327 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 14:36:22.406 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 14:36:22.406 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 859 ms
+[INFO ] 14:36:22.546 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 14:36:22.765 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 14:36:22.812 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 14:36:22.843 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 14:36:22.984 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 14:36:23.093 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 14:36:23.280 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:36:23.280 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:36:23.296 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 14:36:23.296 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 14:36:23.499 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 14:36:23.515 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 14:36:23.796 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 14:36:24.202 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:36:24.218 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 14:36:24.233 com.apti.service.ServiceApplication - Started ServiceApplication in 3.14 seconds (JVM running for 3.372)
+[INFO ] 14:36:29.814 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 14:36:29.814 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 14:36:29.815 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 14:36:29.838 c.a.s.contoller.MemberController - mblToken ===>  1652933430:e9b7c5b9c656d396bb497277623f852a
+[ERROR] 14:36:29.841 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.amdRepo" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.amdRepo" is null
+	at com.apti.service.service.AeMemberDamoService.findMemberInfo(AeMemberDamoService.java:30)
+	at com.apti.service.contoller.MemberController.test(MemberController.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 14:36:31.768 c.a.s.contoller.MemberController - mblToken ===>  1652933430:e9b7c5b9c656d396bb497277623f852a
+[ERROR] 14:36:31.769 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.amdRepo" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.amdRepo" is null
+	at com.apti.service.service.AeMemberDamoService.findMemberInfo(AeMemberDamoService.java:30)
+	at com.apti.service.contoller.MemberController.test(MemberController.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 14:37:54.212 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 19264 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 14:37:54.212 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 14:37:54.712 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 14:37:54.759 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+[INFO ] 14:37:55.134 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 14:37:55.150 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:37:55.150 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 14:37:55.150 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 14:37:55.228 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 14:37:55.228 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 871 ms
+[INFO ] 14:37:55.391 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 14:37:55.607 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 14:37:55.654 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 14:37:55.701 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 14:37:55.872 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 14:37:55.982 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 14:37:56.169 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:37:56.169 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:37:56.169 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 14:37:56.169 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 14:37:56.388 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 14:37:56.388 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 14:37:56.669 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 14:37:57.106 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:37:57.122 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 14:37:57.138 com.apti.service.ServiceApplication - Started ServiceApplication in 3.251 seconds (JVM running for 3.494)
+[INFO ] 14:38:06.482 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 14:38:06.482 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 14:38:06.483 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 14:38:06.504 c.a.s.contoller.MemberController - mblToken ===>  1652933430:e9b7c5b9c656d396bb497277623f852a
+[ERROR] 14:38:06.507 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.amdRepo" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.amdRepo" is null
+	at com.apti.service.service.AeMemberDamoService.findMemberInfo(AeMemberDamoService.java:30)
+	at com.apti.service.contoller.MemberController.test(MemberController.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 14:38:42.450 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 16840 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 14:38:42.450 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 14:38:42.958 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 14:38:42.989 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 2 JPA repository interfaces.
+[INFO ] 14:38:43.379 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 14:38:43.379 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:38:43.379 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 14:38:43.379 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 14:38:43.458 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 14:38:43.458 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 849 ms
+[INFO ] 14:38:43.614 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 14:38:44.004 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 14:38:44.051 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 14:38:44.082 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 14:38:44.223 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 14:38:44.317 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 14:38:44.520 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:38:44.520 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:38:44.520 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 14:38:44.520 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 14:38:44.754 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 14:38:44.754 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 14:38:45.068 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 14:38:45.537 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:38:45.553 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 14:38:45.553 com.apti.service.ServiceApplication - Started ServiceApplication in 3.428 seconds (JVM running for 3.659)
+[INFO ] 14:38:51.770 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 14:38:51.771 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 14:38:51.771 o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 14:38:51.794 c.a.s.contoller.MemberController - mblToken ===>  1652933430:e9b7c5b9c656d396bb497277623f852a
+[ERROR] 14:38:51.797 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.amdRepo" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.amdRepo" is null
+	at com.apti.service.service.AeMemberDamoService.findMemberInfo(AeMemberDamoService.java:30)
+	at com.apti.service.contoller.MemberController.test(MemberController.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 14:58:01.991 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 21664 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 14:58:01.991 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 14:58:02.502 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 14:58:02.549 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+[INFO ] 14:58:02.937 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 14:58:02.937 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:58:02.937 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 14:58:02.937 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 14:58:03.015 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 14:58:03.015 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 862 ms
+[INFO ] 14:58:03.171 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 14:58:03.405 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 14:58:03.452 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 14:58:03.499 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 14:58:03.655 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 14:58:03.765 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 14:58:03.968 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:58:03.968 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:58:03.968 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 14:58:03.968 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 14:58:04.186 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 14:58:04.186 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 14:58:04.468 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 14:58:04.936 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:58:04.967 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 14:58:04.967 com.apti.service.ServiceApplication - Started ServiceApplication in 3.296 seconds (JVM running for 3.529)
+[INFO ] 14:58:33.468 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 11292 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 14:58:33.468 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 14:58:33.963 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 14:58:34.000 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+[INFO ] 14:58:34.359 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 14:58:34.359 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:58:34.359 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 14:58:34.359 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 14:58:34.437 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 14:58:34.437 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 827 ms
+[INFO ] 14:58:34.594 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 14:58:34.812 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 14:58:34.844 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 14:58:34.906 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 14:58:35.049 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 14:58:35.158 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 14:58:35.350 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:58:35.366 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:58:35.366 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 14:58:35.366 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 14:58:35.569 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 14:58:35.569 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 14:58:35.842 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 14:58:36.295 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:58:36.310 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 14:58:36.326 com.apti.service.ServiceApplication - Started ServiceApplication in 3.17 seconds (JVM running for 3.403)
+[INFO ] 14:59:49.249 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 17880 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 14:59:49.249 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 14:59:49.754 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 14:59:49.786 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+[INFO ] 14:59:50.176 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 14:59:50.176 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:59:50.176 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 14:59:50.176 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 14:59:50.254 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 14:59:50.254 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 855 ms
+[INFO ] 14:59:50.426 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 14:59:50.629 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 14:59:50.660 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 14:59:50.723 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 14:59:50.864 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 14:59:50.973 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 14:59:51.192 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:59:51.192 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 14:59:51.192 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 14:59:51.192 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 14:59:51.410 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 14:59:51.410 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 14:59:51.676 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 14:59:52.066 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 14:59:52.098 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 14:59:52.098 com.apti.service.ServiceApplication - Started ServiceApplication in 3.175 seconds (JVM running for 3.411)
+[INFO ] 14:59:58.463 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 14:59:58.463 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 14:59:58.463 o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 14:59:58.486 c.a.s.contoller.MemberController - mblToken ===>  1652933430:e9b7c5b9c656d396bb497277623f852a
+[ERROR] 14:59:58.488 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.amdRepo" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.apti.service.repository.AeMemberDamoRepository.findByMblToken(String)" because "this.amdRepo" is null
+	at com.apti.service.service.AeMemberDamoService.findMemberInfo(AeMemberDamoService.java:30)
+	at com.apti.service.contoller.MemberController.test(MemberController.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 15:09:36.202 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 7212 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 15:09:36.202 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 15:09:36.712 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 15:09:36.743 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+[INFO ] 15:09:37.137 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 15:09:37.137 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 15:09:37.137 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 15:09:37.137 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 15:09:37.215 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 15:09:37.215 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 865 ms
+[INFO ] 15:09:37.371 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 15:09:37.590 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 15:09:37.620 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 15:09:37.683 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 15:09:37.823 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 15:09:37.948 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 15:09:38.136 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 15:09:38.136 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 15:09:38.136 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 15:09:38.136 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 15:09:38.339 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 15:09:38.355 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 15:09:38.636 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 15:09:39.089 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 15:09:39.104 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 15:09:39.120 com.apti.service.ServiceApplication - Started ServiceApplication in 3.233 seconds (JVM running for 3.467)
+[INFO ] 15:09:59.085 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 15:09:59.085 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 15:09:59.086 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 15:09:59.110 c.a.s.contoller.MemberController - mblToken ===>  1652933430:e9b7c5b9c656d396bb497277623f852a
+[TRACE] 15:09:59.152 o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1652933430:e9b7c5b9c656d396bb497277623f852a]
+[TRACE] 15:09:59.159 o.h.t.descriptor.sql.BasicExtractor - extracted value ([code] : [VARCHAR]) - [29278]
+[TRACE] 15:09:59.160 o.h.t.descriptor.sql.BasicExtractor - extracted value ([userid] : [VARCHAR]) - [kouydong]
+[TRACE] 15:09:59.162 o.h.t.descriptor.sql.BasicExtractor - extracted value ([code] : [VARCHAR]) - [29278]
+[TRACE] 15:09:59.163 o.h.t.descriptor.sql.BasicExtractor - extracted value ([userid] : [VARCHAR]) - [kouydong]
+[TRACE] 15:09:59.163 o.h.t.descriptor.sql.BasicExtractor - extracted value ([addr1] : [VARCHAR]) - [경기도 의정부시 가능동 717-22]
+[TRACE] 15:09:59.163 o.h.t.descriptor.sql.BasicExtractor - extracted value ([addr2] : [VARCHAR]) - []
+[TRACE] 15:09:59.163 o.h.t.descriptor.sql.BasicExtractor - extracted value ([apt_dong] : [VARCHAR]) - [101]
+[TRACE] 15:09:59.163 o.h.t.descriptor.sql.BasicExtractor - extracted value ([apt_ho] : [VARCHAR]) - [202]
+[TRACE] 15:09:59.163 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiinfoagree] : [VARCHAR]) - [Y]
+[TRACE] 15:09:59.163 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiinfoagreedt] : [VARCHAR]) - [20220414]
+[TRACE] 15:09:59.163 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiout_yn] : [VARCHAR]) - [N]
+[TRACE] 15:09:59.163 o.h.t.descriptor.sql.BasicExtractor - extracted value ([authgubu] : [VARCHAR]) - [S]
+[TRACE] 15:09:59.163 o.h.t.descriptor.sql.BasicExtractor - extracted value ([birthday] : [VARCHAR]) - [--]
+[TRACE] 15:09:59.163 o.h.t.descriptor.sql.BasicExtractor - extracted value ([birthday_gubu] : [VARCHAR]) - [1]
+[TRACE] 15:09:59.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([car_n] : [INTEGER]) - [0]
+[TRACE] 15:09:59.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([car_num] : [VARCHAR]) - []
+[TRACE] 15:09:59.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([daninfoagree] : [VARCHAR]) - [Y]
+[TRACE] 15:09:59.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([daninfoagreedt] : [VARCHAR]) - [20220414]
+[TRACE] 15:09:59.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([danout_yn] : [VARCHAR]) - [N]
+[TRACE] 15:09:59.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([donghomeinsert] : [VARCHAR]) - [N]
+[TRACE] 15:09:59.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([email] : [VARCHAR]) - [kouydong@gmai.com]
+[TRACE] 15:09:59.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([email_yn] : [VARCHAR]) - [N]
+[TRACE] 15:09:59.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foregubu] : [VARCHAR]) - [9]
+[TRACE] 15:09:59.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foreverout] : [VARCHAR]) - [N]
+[TRACE] 15:09:59.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foreveroutdate] : [VARCHAR]) - [null]
+[TRACE] 15:09:59.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([gubu] : [VARCHAR]) - [I]
+[TRACE] 15:09:59.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([ipinci] : [VARCHAR]) - [KD6PdT9Z+atlq3hMRjbMAnVv/UaHZG6Ss0pmxnR7NvypGpU6GKH3sGyL+B3rlgms6+h+r73P6tvHvgHCESsY+w==]
+[TRACE] 15:09:59.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([ipindi] : [VARCHAR]) - [MC0GCCqGSIb3DQIJAyEA56YsqtnX5upDGkVjjmDuvm0nUsBFZ5Tm6YN0094qubs=]
+[TRACE] 15:09:59.164 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job] : [VARCHAR]) - []
+[TRACE] 15:09:59.165 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job_name] : [VARCHAR]) - []
+[TRACE] 15:09:59.165 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job_position] : [VARCHAR]) - []
+[TRACE] 15:09:59.165 o.h.t.descriptor.sql.BasicExtractor - extracted value ([jumin] : [VARCHAR]) - [null]
+[TRACE] 15:09:59.165 o.h.t.descriptor.sql.BasicExtractor - extracted value ([login] : [INTEGER]) - [25]
+[TRACE] 15:09:59.165 o.h.t.descriptor.sql.BasicExtractor - extracted value ([m_level] : [INTEGER]) - [10]
+[TRACE] 15:09:59.165 o.h.t.descriptor.sql.BasicExtractor - extracted value ([marketing1] : [VARCHAR]) - [N]
+[TRACE] 15:09:59.165 o.h.t.descriptor.sql.BasicExtractor - extracted value ([mbl_token] : [VARCHAR]) - [1652933430:e9b7c5b9c656d396bb497277623f852a]
+[TRACE] 15:09:59.165 o.h.t.descriptor.sql.BasicExtractor - extracted value ([name] : [VARCHAR]) - [고의동]
+[TRACE] 15:09:59.165 o.h.t.descriptor.sql.BasicExtractor - extracted value ([nickname] : [VARCHAR]) - [고의동]
+[TRACE] 15:09:59.165 o.h.t.descriptor.sql.BasicExtractor - extracted value ([out_yn] : [VARCHAR]) - [N]
+[TRACE] 15:09:59.165 o.h.t.descriptor.sql.BasicExtractor - extracted value ([outcontent] : [VARCHAR]) - [null]
+[TRACE] 15:09:59.165 o.h.t.descriptor.sql.BasicExtractor - extracted value ([outdate] : [VARCHAR]) - [null]
+[TRACE] 15:09:59.165 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd] : [VARCHAR]) - [jFU+05aUhkZpPVjLIWAf6EmsL6823qD1k4zToWqQP/E=]
+[TRACE] 15:09:59.165 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd_answer] : [VARCHAR]) - []
+[TRACE] 15:09:59.165 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd_hint] : [VARCHAR]) - [1]
+[TRACE] 15:09:59.165 o.h.t.descriptor.sql.BasicExtractor - extracted value ([recomid] : [VARCHAR]) - [null]
+[TRACE] 15:09:59.166 o.h.t.descriptor.sql.BasicExtractor - extracted value ([regdate] : [VARCHAR]) - [2022-04-14 10:30:34.42]
+[TRACE] 15:09:59.166 o.h.t.descriptor.sql.BasicExtractor - extracted value ([relogin] : [VARCHAR]) - [2022-06-02 15:51:28.27]
+[TRACE] 15:09:59.166 o.h.t.descriptor.sql.BasicExtractor - extracted value ([row_id] : [VARCHAR]) - [071E2D15-67D1-48AB-983F-B3D416C6B4F4]
+[TRACE] 15:09:59.166 o.h.t.descriptor.sql.BasicExtractor - extracted value ([se_chk] : [VARCHAR]) - [N]
+[TRACE] 15:09:59.166 o.h.t.descriptor.sql.BasicExtractor - extracted value ([se_name] : [VARCHAR]) - [고의동]
+[TRACE] 15:09:59.166 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sec_jumin] : [VARCHAR]) - [null]
+[TRACE] 15:09:59.166 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sex] : [VARCHAR]) - [1]
+[TRACE] 15:09:59.166 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiinfoagree] : [VARCHAR]) - [N]
+[TRACE] 15:09:59.166 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiinfoagreedt] : [VARCHAR]) - [null]
+[TRACE] 15:09:59.166 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiout_yn] : [VARCHAR]) - [N]
+[TRACE] 15:09:59.167 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sms_yn] : [VARCHAR]) - [Y]
+[TRACE] 15:09:59.167 o.h.t.descriptor.sql.BasicExtractor - extracted value ([stopaccount_yn] : [VARCHAR]) - [N]
+[TRACE] 15:09:59.167 o.h.t.descriptor.sql.BasicExtractor - extracted value ([tel] : [VARCHAR]) - [--]
+[TRACE] 15:09:59.167 o.h.t.descriptor.sql.BasicExtractor - extracted value ([telecom] : [VARCHAR]) - []
+[TRACE] 15:09:59.167 o.h.t.descriptor.sql.BasicExtractor - extracted value ([whereis] : [VARCHAR]) - [U]
+[TRACE] 15:09:59.167 o.h.t.descriptor.sql.BasicExtractor - extracted value ([whereis2] : [VARCHAR]) - [  ]
+[TRACE] 15:09:59.167 o.h.t.descriptor.sql.BasicExtractor - extracted value ([zipcode] : [VARCHAR]) - [480-812]
+[TRACE] 15:09:59.167 o.h.t.descriptor.sql.BasicExtractor - extracted value ([zisacode] : [VARCHAR]) - [null]
+[INFO ] 15:10:24.850 com.apti.service.ServiceApplication - Starting ServiceApplication using Java 17.0.2 on DESKTOP-GGBHVPK with PID 14580 (C:\project\service\build\classes\java\main started by kouydong in C:\project\service)
+[INFO ] 15:10:24.850 com.apti.service.ServiceApplication - The following 1 profile is active: "prod"
+[INFO ] 15:10:25.352 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 15:10:25.399 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+[INFO ] 15:10:25.774 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 15:10:25.774 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 15:10:25.774 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 15:10:25.774 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+[INFO ] 15:10:25.852 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 15:10:25.852 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 850 ms
+[INFO ] 15:10:26.008 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 15:10:26.211 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 15:10:26.258 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 15:10:26.290 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 15:10:26.415 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 15:10:26.524 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[WARN ] 15:10:26.727 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 15:10:26.727 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.MenuhomeCategoryPK
+[WARN ] 15:10:26.727 org.hibernate.mapping.RootClass - HHH000038: Composite-id class does not override equals(): com.apti.service.entityKey.AeMemberDamoPK
+[WARN ] 15:10:26.727 org.hibernate.mapping.RootClass - HHH000039: Composite-id class does not override hashCode(): com.apti.service.entityKey.AeMemberDamoPK
+[INFO ] 15:10:26.946 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 15:10:26.946 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 15:10:27.242 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 15:10:27.696 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 15:10:27.727 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 15:10:27.727 com.apti.service.ServiceApplication - Started ServiceApplication in 3.203 seconds (JVM running for 3.439)
+[INFO ] 15:10:31.477 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 15:10:31.477 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 15:10:31.478 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 15:10:31.504 c.a.s.contoller.MemberController - mblToken ===>  1652933430:e9b7c5b9c656d396bb497277623f852a
+[TRACE] 15:10:31.552 o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1652933430:e9b7c5b9c656d396bb497277623f852a]
+[TRACE] 15:10:31.559 o.h.t.descriptor.sql.BasicExtractor - extracted value ([code] : [VARCHAR]) - [29278]
+[TRACE] 15:10:31.560 o.h.t.descriptor.sql.BasicExtractor - extracted value ([userid] : [VARCHAR]) - [kouydong]
+[TRACE] 15:10:31.563 o.h.t.descriptor.sql.BasicExtractor - extracted value ([code] : [VARCHAR]) - [29278]
+[TRACE] 15:10:31.563 o.h.t.descriptor.sql.BasicExtractor - extracted value ([userid] : [VARCHAR]) - [kouydong]
+[TRACE] 15:10:31.563 o.h.t.descriptor.sql.BasicExtractor - extracted value ([addr1] : [VARCHAR]) - [경기도 의정부시 가능동 717-22]
+[TRACE] 15:10:31.563 o.h.t.descriptor.sql.BasicExtractor - extracted value ([addr2] : [VARCHAR]) - []
+[TRACE] 15:10:31.563 o.h.t.descriptor.sql.BasicExtractor - extracted value ([apt_dong] : [VARCHAR]) - [101]
+[TRACE] 15:10:31.563 o.h.t.descriptor.sql.BasicExtractor - extracted value ([apt_ho] : [VARCHAR]) - [202]
+[TRACE] 15:10:31.563 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiinfoagree] : [VARCHAR]) - [Y]
+[TRACE] 15:10:31.563 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiinfoagreedt] : [VARCHAR]) - [20220414]
+[TRACE] 15:10:31.564 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiout_yn] : [VARCHAR]) - [N]
+[TRACE] 15:10:31.564 o.h.t.descriptor.sql.BasicExtractor - extracted value ([authgubu] : [VARCHAR]) - [S]
+[TRACE] 15:10:31.564 o.h.t.descriptor.sql.BasicExtractor - extracted value ([birthday] : [VARCHAR]) - [--]
+[TRACE] 15:10:31.564 o.h.t.descriptor.sql.BasicExtractor - extracted value ([birthday_gubu] : [VARCHAR]) - [1]
+[TRACE] 15:10:31.564 o.h.t.descriptor.sql.BasicExtractor - extracted value ([car_n] : [INTEGER]) - [0]
+[TRACE] 15:10:31.564 o.h.t.descriptor.sql.BasicExtractor - extracted value ([car_num] : [VARCHAR]) - []
+[TRACE] 15:10:31.564 o.h.t.descriptor.sql.BasicExtractor - extracted value ([daninfoagree] : [VARCHAR]) - [Y]
+[TRACE] 15:10:31.564 o.h.t.descriptor.sql.BasicExtractor - extracted value ([daninfoagreedt] : [VARCHAR]) - [20220414]
+[TRACE] 15:10:31.564 o.h.t.descriptor.sql.BasicExtractor - extracted value ([danout_yn] : [VARCHAR]) - [N]
+[TRACE] 15:10:31.564 o.h.t.descriptor.sql.BasicExtractor - extracted value ([donghomeinsert] : [VARCHAR]) - [N]
+[TRACE] 15:10:31.565 o.h.t.descriptor.sql.BasicExtractor - extracted value ([email] : [VARCHAR]) - [kouydong@gmai.com]
+[TRACE] 15:10:31.565 o.h.t.descriptor.sql.BasicExtractor - extracted value ([email_yn] : [VARCHAR]) - [N]
+[TRACE] 15:10:31.565 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foregubu] : [VARCHAR]) - [9]
+[TRACE] 15:10:31.565 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foreverout] : [VARCHAR]) - [N]
+[TRACE] 15:10:31.565 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foreveroutdate] : [VARCHAR]) - [null]
+[TRACE] 15:10:31.565 o.h.t.descriptor.sql.BasicExtractor - extracted value ([gubu] : [VARCHAR]) - [I]
+[TRACE] 15:10:31.565 o.h.t.descriptor.sql.BasicExtractor - extracted value ([ipinci] : [VARCHAR]) - [KD6PdT9Z+atlq3hMRjbMAnVv/UaHZG6Ss0pmxnR7NvypGpU6GKH3sGyL+B3rlgms6+h+r73P6tvHvgHCESsY+w==]
+[TRACE] 15:10:31.565 o.h.t.descriptor.sql.BasicExtractor - extracted value ([ipindi] : [VARCHAR]) - [MC0GCCqGSIb3DQIJAyEA56YsqtnX5upDGkVjjmDuvm0nUsBFZ5Tm6YN0094qubs=]
+[TRACE] 15:10:31.565 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job] : [VARCHAR]) - []
+[TRACE] 15:10:31.565 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job_name] : [VARCHAR]) - []
+[TRACE] 15:10:31.565 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job_position] : [VARCHAR]) - []
+[TRACE] 15:10:31.565 o.h.t.descriptor.sql.BasicExtractor - extracted value ([jumin] : [VARCHAR]) - [null]
+[TRACE] 15:10:31.565 o.h.t.descriptor.sql.BasicExtractor - extracted value ([login] : [INTEGER]) - [25]
+[TRACE] 15:10:31.566 o.h.t.descriptor.sql.BasicExtractor - extracted value ([m_level] : [INTEGER]) - [10]
+[TRACE] 15:10:31.566 o.h.t.descriptor.sql.BasicExtractor - extracted value ([marketing1] : [VARCHAR]) - [N]
+[TRACE] 15:10:31.566 o.h.t.descriptor.sql.BasicExtractor - extracted value ([mbl_token] : [VARCHAR]) - [1652933430:e9b7c5b9c656d396bb497277623f852a]
+[TRACE] 15:10:31.566 o.h.t.descriptor.sql.BasicExtractor - extracted value ([name] : [VARCHAR]) - [고의동]
+[TRACE] 15:10:31.566 o.h.t.descriptor.sql.BasicExtractor - extracted value ([nickname] : [VARCHAR]) - [고의동]
+[TRACE] 15:10:31.566 o.h.t.descriptor.sql.BasicExtractor - extracted value ([out_yn] : [VARCHAR]) - [N]
+[TRACE] 15:10:31.566 o.h.t.descriptor.sql.BasicExtractor - extracted value ([outcontent] : [VARCHAR]) - [null]
+[TRACE] 15:10:31.566 o.h.t.descriptor.sql.BasicExtractor - extracted value ([outdate] : [VARCHAR]) - [null]
+[TRACE] 15:10:31.566 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd] : [VARCHAR]) - [jFU+05aUhkZpPVjLIWAf6EmsL6823qD1k4zToWqQP/E=]
+[TRACE] 15:10:31.566 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd_answer] : [VARCHAR]) - []
+[TRACE] 15:10:31.566 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd_hint] : [VARCHAR]) - [1]
+[TRACE] 15:10:31.566 o.h.t.descriptor.sql.BasicExtractor - extracted value ([recomid] : [VARCHAR]) - [null]
+[TRACE] 15:10:31.567 o.h.t.descriptor.sql.BasicExtractor - extracted value ([regdate] : [VARCHAR]) - [2022-04-14 10:30:34.42]
+[TRACE] 15:10:31.567 o.h.t.descriptor.sql.BasicExtractor - extracted value ([relogin] : [VARCHAR]) - [2022-06-02 15:51:28.27]
+[TRACE] 15:10:31.567 o.h.t.descriptor.sql.BasicExtractor - extracted value ([row_id] : [VARCHAR]) - [071E2D15-67D1-48AB-983F-B3D416C6B4F4]
+[TRACE] 15:10:31.568 o.h.t.descriptor.sql.BasicExtractor - extracted value ([se_chk] : [VARCHAR]) - [N]
+[TRACE] 15:10:31.568 o.h.t.descriptor.sql.BasicExtractor - extracted value ([se_name] : [VARCHAR]) - [고의동]
+[TRACE] 15:10:31.568 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sec_jumin] : [VARCHAR]) - [null]
+[TRACE] 15:10:31.568 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sex] : [VARCHAR]) - [1]
+[TRACE] 15:10:31.568 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiinfoagree] : [VARCHAR]) - [N]
+[TRACE] 15:10:31.568 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiinfoagreedt] : [VARCHAR]) - [null]
+[TRACE] 15:10:31.568 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiout_yn] : [VARCHAR]) - [N]
+[TRACE] 15:10:31.568 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sms_yn] : [VARCHAR]) - [Y]
+[TRACE] 15:10:31.568 o.h.t.descriptor.sql.BasicExtractor - extracted value ([stopaccount_yn] : [VARCHAR]) - [N]
+[TRACE] 15:10:31.568 o.h.t.descriptor.sql.BasicExtractor - extracted value ([tel] : [VARCHAR]) - [--]
+[TRACE] 15:10:31.568 o.h.t.descriptor.sql.BasicExtractor - extracted value ([telecom] : [VARCHAR]) - []
+[TRACE] 15:10:31.568 o.h.t.descriptor.sql.BasicExtractor - extracted value ([whereis] : [VARCHAR]) - [U]
+[TRACE] 15:10:31.568 o.h.t.descriptor.sql.BasicExtractor - extracted value ([whereis2] : [VARCHAR]) - [  ]
+[TRACE] 15:10:31.568 o.h.t.descriptor.sql.BasicExtractor - extracted value ([zipcode] : [VARCHAR]) - [480-812]
+[TRACE] 15:10:31.568 o.h.t.descriptor.sql.BasicExtractor - extracted value ([zisacode] : [VARCHAR]) - [null]
+[INFO ] 15:45:51.567 c.a.s.contoller.MemberController - mblToken ===>  1654156557:6b80f81fb052986edbdcb56a32ab543d
+[TRACE] 15:45:51.571 o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1654156557:6b80f81fb052986edbdcb56a32ab543d]
+[TRACE] 15:45:51.573 o.h.t.descriptor.sql.BasicExtractor - extracted value ([code] : [VARCHAR]) - [29278]
+[TRACE] 15:45:51.573 o.h.t.descriptor.sql.BasicExtractor - extracted value ([userid] : [VARCHAR]) - [yejin1234]
+[TRACE] 15:45:51.573 o.h.t.descriptor.sql.BasicExtractor - extracted value ([code] : [VARCHAR]) - [29278]
+[TRACE] 15:45:51.573 o.h.t.descriptor.sql.BasicExtractor - extracted value ([userid] : [VARCHAR]) - [yejin1234]
+[TRACE] 15:45:51.574 o.h.t.descriptor.sql.BasicExtractor - extracted value ([addr1] : [VARCHAR]) - [경기도 의정부시 가능동 717-22]
+[TRACE] 15:45:51.574 o.h.t.descriptor.sql.BasicExtractor - extracted value ([addr2] : [VARCHAR]) - []
+[TRACE] 15:45:51.574 o.h.t.descriptor.sql.BasicExtractor - extracted value ([apt_dong] : [VARCHAR]) - [101]
+[TRACE] 15:45:51.574 o.h.t.descriptor.sql.BasicExtractor - extracted value ([apt_ho] : [VARCHAR]) - [201]
+[TRACE] 15:45:51.574 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiinfoagree] : [VARCHAR]) - [Y]
+[TRACE] 15:45:51.574 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiinfoagreedt] : [VARCHAR]) - [20220323]
+[TRACE] 15:45:51.574 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiout_yn] : [VARCHAR]) - [N]
+[TRACE] 15:45:51.574 o.h.t.descriptor.sql.BasicExtractor - extracted value ([authgubu] : [VARCHAR]) - [S]
+[TRACE] 15:45:51.574 o.h.t.descriptor.sql.BasicExtractor - extracted value ([birthday] : [VARCHAR]) - [--]
+[TRACE] 15:45:51.574 o.h.t.descriptor.sql.BasicExtractor - extracted value ([birthday_gubu] : [VARCHAR]) - [1]
+[TRACE] 15:45:51.574 o.h.t.descriptor.sql.BasicExtractor - extracted value ([car_n] : [INTEGER]) - [0]
+[TRACE] 15:45:51.574 o.h.t.descriptor.sql.BasicExtractor - extracted value ([car_num] : [VARCHAR]) - []
+[TRACE] 15:45:51.574 o.h.t.descriptor.sql.BasicExtractor - extracted value ([daninfoagree] : [VARCHAR]) - [Y]
+[TRACE] 15:45:51.574 o.h.t.descriptor.sql.BasicExtractor - extracted value ([daninfoagreedt] : [VARCHAR]) - [20220323]
+[TRACE] 15:45:51.574 o.h.t.descriptor.sql.BasicExtractor - extracted value ([danout_yn] : [VARCHAR]) - [N]
+[TRACE] 15:45:51.574 o.h.t.descriptor.sql.BasicExtractor - extracted value ([donghomeinsert] : [VARCHAR]) - [N]
+[TRACE] 15:45:51.574 o.h.t.descriptor.sql.BasicExtractor - extracted value ([email] : [VARCHAR]) - [kouydong@gmail.com]
+[TRACE] 15:45:51.574 o.h.t.descriptor.sql.BasicExtractor - extracted value ([email_yn] : [VARCHAR]) - [N]
+[TRACE] 15:45:51.574 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foregubu] : [VARCHAR]) - [9]
+[TRACE] 15:45:51.574 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foreverout] : [VARCHAR]) - [N]
+[TRACE] 15:45:51.575 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foreveroutdate] : [VARCHAR]) - [null]
+[TRACE] 15:45:51.575 o.h.t.descriptor.sql.BasicExtractor - extracted value ([gubu] : [VARCHAR]) - [I]
+[TRACE] 15:45:51.575 o.h.t.descriptor.sql.BasicExtractor - extracted value ([ipinci] : [VARCHAR]) - [b2z0IuWAauB88aDRtIL7FE/3/pvaSQHRuUiUAf9zfWo7SM127Rh4yhFCJFisjFHPzz/pYPZFseQUxP3/2T3yyA==]
+[TRACE] 15:45:51.575 o.h.t.descriptor.sql.BasicExtractor - extracted value ([ipindi] : [VARCHAR]) - [MC0GCCqGSIb3DQIJAyEAY4Uc9CPqnfrolWs2J/aL45IBKbZpD2hLEFxcXemsPUw=]
+[TRACE] 15:45:51.575 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job] : [VARCHAR]) - []
+[TRACE] 15:45:51.575 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job_name] : [VARCHAR]) - []
+[TRACE] 15:45:51.575 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job_position] : [VARCHAR]) - []
+[TRACE] 15:45:51.575 o.h.t.descriptor.sql.BasicExtractor - extracted value ([jumin] : [VARCHAR]) - [null]
+[TRACE] 15:45:51.575 o.h.t.descriptor.sql.BasicExtractor - extracted value ([login] : [INTEGER]) - [48]
+[TRACE] 15:45:51.575 o.h.t.descriptor.sql.BasicExtractor - extracted value ([m_level] : [INTEGER]) - [10]
+[TRACE] 15:45:51.575 o.h.t.descriptor.sql.BasicExtractor - extracted value ([marketing1] : [VARCHAR]) - [N]
+[TRACE] 15:45:51.575 o.h.t.descriptor.sql.BasicExtractor - extracted value ([mbl_token] : [VARCHAR]) - [1654156557:6b80f81fb052986edbdcb56a32ab543d]
+[TRACE] 15:45:51.575 o.h.t.descriptor.sql.BasicExtractor - extracted value ([name] : [VARCHAR]) - [이예진]
+[TRACE] 15:45:51.575 o.h.t.descriptor.sql.BasicExtractor - extracted value ([nickname] : [VARCHAR]) - [이예진2]
+[TRACE] 15:45:51.575 o.h.t.descriptor.sql.BasicExtractor - extracted value ([out_yn] : [VARCHAR]) - [N]
+[TRACE] 15:45:51.575 o.h.t.descriptor.sql.BasicExtractor - extracted value ([outcontent] : [VARCHAR]) - [null]
+[TRACE] 15:45:51.576 o.h.t.descriptor.sql.BasicExtractor - extracted value ([outdate] : [VARCHAR]) - [null]
+[TRACE] 15:45:51.576 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd] : [VARCHAR]) - [ULxxMN12aq2bnVhnqUhRV77AKP9e5HRfP/M9Fs5dsOY=]
+[TRACE] 15:45:51.576 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd_answer] : [VARCHAR]) - []
+[TRACE] 15:45:51.576 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd_hint] : [VARCHAR]) - [1]
+[TRACE] 15:45:51.576 o.h.t.descriptor.sql.BasicExtractor - extracted value ([recomid] : [VARCHAR]) - [null]
+[TRACE] 15:45:51.576 o.h.t.descriptor.sql.BasicExtractor - extracted value ([regdate] : [VARCHAR]) - [2022-03-23 16:33:51.54]
+[TRACE] 15:45:51.576 o.h.t.descriptor.sql.BasicExtractor - extracted value ([relogin] : [VARCHAR]) - [2022-06-03 09:20:50.357]
+[TRACE] 15:45:51.576 o.h.t.descriptor.sql.BasicExtractor - extracted value ([row_id] : [VARCHAR]) - [93C08BE5-66E4-4E57-8D87-76EE4BC090CB]
+[TRACE] 15:45:51.576 o.h.t.descriptor.sql.BasicExtractor - extracted value ([se_chk] : [VARCHAR]) - [Y]
+[TRACE] 15:45:51.576 o.h.t.descriptor.sql.BasicExtractor - extracted value ([se_name] : [VARCHAR]) - [이예진]
+[TRACE] 15:45:51.576 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sec_jumin] : [VARCHAR]) - [null]
+[TRACE] 15:45:51.576 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sex] : [VARCHAR]) - [0]
+[TRACE] 15:45:51.576 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiinfoagree] : [VARCHAR]) - [N]
+[TRACE] 15:45:51.576 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiinfoagreedt] : [VARCHAR]) - [null]
+[TRACE] 15:45:51.576 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiout_yn] : [VARCHAR]) - [N]
+[TRACE] 15:45:51.576 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sms_yn] : [VARCHAR]) - [N]
+[TRACE] 15:45:51.576 o.h.t.descriptor.sql.BasicExtractor - extracted value ([stopaccount_yn] : [VARCHAR]) - [N]
+[TRACE] 15:45:51.576 o.h.t.descriptor.sql.BasicExtractor - extracted value ([tel] : [VARCHAR]) - [--]
+[TRACE] 15:45:51.576 o.h.t.descriptor.sql.BasicExtractor - extracted value ([telecom] : [VARCHAR]) - []
+[TRACE] 15:45:51.577 o.h.t.descriptor.sql.BasicExtractor - extracted value ([whereis] : [VARCHAR]) - [I]
+[TRACE] 15:45:51.577 o.h.t.descriptor.sql.BasicExtractor - extracted value ([whereis2] : [VARCHAR]) - [null]
+[TRACE] 15:45:51.577 o.h.t.descriptor.sql.BasicExtractor - extracted value ([zipcode] : [VARCHAR]) - [480-812]
+[TRACE] 15:45:51.577 o.h.t.descriptor.sql.BasicExtractor - extracted value ([zisacode] : [VARCHAR]) - [null]
+[INFO ] 18:09:14.439 c.a.s.contoller.MemberController - mblToken ===>  1652933430:e9b7c5b9c656d396bb497277623f852a
+[TRACE] 18:09:14.442 o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1652933430:e9b7c5b9c656d396bb497277623f852a]
+[TRACE] 18:09:14.444 o.h.t.descriptor.sql.BasicExtractor - extracted value ([code] : [VARCHAR]) - [29278]
+[TRACE] 18:09:14.445 o.h.t.descriptor.sql.BasicExtractor - extracted value ([userid] : [VARCHAR]) - [kouydong]
+[TRACE] 18:09:14.445 o.h.t.descriptor.sql.BasicExtractor - extracted value ([code] : [VARCHAR]) - [29278]
+[TRACE] 18:09:14.445 o.h.t.descriptor.sql.BasicExtractor - extracted value ([userid] : [VARCHAR]) - [kouydong]
+[TRACE] 18:09:14.445 o.h.t.descriptor.sql.BasicExtractor - extracted value ([addr1] : [VARCHAR]) - [경기도 의정부시 가능동 717-22]
+[TRACE] 18:09:14.445 o.h.t.descriptor.sql.BasicExtractor - extracted value ([addr2] : [VARCHAR]) - []
+[TRACE] 18:09:14.445 o.h.t.descriptor.sql.BasicExtractor - extracted value ([apt_dong] : [VARCHAR]) - [101]
+[TRACE] 18:09:14.445 o.h.t.descriptor.sql.BasicExtractor - extracted value ([apt_ho] : [VARCHAR]) - [202]
+[TRACE] 18:09:14.445 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiinfoagree] : [VARCHAR]) - [Y]
+[TRACE] 18:09:14.445 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiinfoagreedt] : [VARCHAR]) - [20220414]
+[TRACE] 18:09:14.445 o.h.t.descriptor.sql.BasicExtractor - extracted value ([aptiout_yn] : [VARCHAR]) - [N]
+[TRACE] 18:09:14.445 o.h.t.descriptor.sql.BasicExtractor - extracted value ([authgubu] : [VARCHAR]) - [S]
+[TRACE] 18:09:14.445 o.h.t.descriptor.sql.BasicExtractor - extracted value ([birthday] : [VARCHAR]) - [--]
+[TRACE] 18:09:14.445 o.h.t.descriptor.sql.BasicExtractor - extracted value ([birthday_gubu] : [VARCHAR]) - [1]
+[TRACE] 18:09:14.445 o.h.t.descriptor.sql.BasicExtractor - extracted value ([car_n] : [INTEGER]) - [0]
+[TRACE] 18:09:14.445 o.h.t.descriptor.sql.BasicExtractor - extracted value ([car_num] : [VARCHAR]) - []
+[TRACE] 18:09:14.445 o.h.t.descriptor.sql.BasicExtractor - extracted value ([daninfoagree] : [VARCHAR]) - [Y]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([daninfoagreedt] : [VARCHAR]) - [20220414]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([danout_yn] : [VARCHAR]) - [N]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([donghomeinsert] : [VARCHAR]) - [N]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([email] : [VARCHAR]) - [kouydong@gmai.com]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([email_yn] : [VARCHAR]) - [N]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foregubu] : [VARCHAR]) - [9]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foreverout] : [VARCHAR]) - [N]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([foreveroutdate] : [VARCHAR]) - [null]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([gubu] : [VARCHAR]) - [I]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([ipinci] : [VARCHAR]) - [KD6PdT9Z+atlq3hMRjbMAnVv/UaHZG6Ss0pmxnR7NvypGpU6GKH3sGyL+B3rlgms6+h+r73P6tvHvgHCESsY+w==]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([ipindi] : [VARCHAR]) - [MC0GCCqGSIb3DQIJAyEA56YsqtnX5upDGkVjjmDuvm0nUsBFZ5Tm6YN0094qubs=]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job] : [VARCHAR]) - []
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job_name] : [VARCHAR]) - []
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([job_position] : [VARCHAR]) - []
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([jumin] : [VARCHAR]) - [null]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([login] : [INTEGER]) - [25]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([m_level] : [INTEGER]) - [10]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([marketing1] : [VARCHAR]) - [N]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([mbl_token] : [VARCHAR]) - [1652933430:e9b7c5b9c656d396bb497277623f852a]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([name] : [VARCHAR]) - [고의동]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([nickname] : [VARCHAR]) - [고의동]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([out_yn] : [VARCHAR]) - [N]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([outcontent] : [VARCHAR]) - [null]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([outdate] : [VARCHAR]) - [null]
+[TRACE] 18:09:14.446 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd] : [VARCHAR]) - [jFU+05aUhkZpPVjLIWAf6EmsL6823qD1k4zToWqQP/E=]
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd_answer] : [VARCHAR]) - []
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([pwd_hint] : [VARCHAR]) - [1]
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([recomid] : [VARCHAR]) - [null]
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([regdate] : [VARCHAR]) - [2022-04-14 10:30:34.42]
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([relogin] : [VARCHAR]) - [2022-06-02 15:51:28.27]
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([row_id] : [VARCHAR]) - [071E2D15-67D1-48AB-983F-B3D416C6B4F4]
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([se_chk] : [VARCHAR]) - [N]
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([se_name] : [VARCHAR]) - [고의동]
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sec_jumin] : [VARCHAR]) - [null]
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sex] : [VARCHAR]) - [1]
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiinfoagree] : [VARCHAR]) - [N]
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiinfoagreedt] : [VARCHAR]) - [null]
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([shopiout_yn] : [VARCHAR]) - [N]
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([sms_yn] : [VARCHAR]) - [Y]
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([stopaccount_yn] : [VARCHAR]) - [N]
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([tel] : [VARCHAR]) - [--]
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([telecom] : [VARCHAR]) - []
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([whereis] : [VARCHAR]) - [U]
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([whereis2] : [VARCHAR]) - [  ]
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([zipcode] : [VARCHAR]) - [480-812]
+[TRACE] 18:09:14.447 o.h.t.descriptor.sql.BasicExtractor - extracted value ([zisacode] : [VARCHAR]) - [null]

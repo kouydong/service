@@ -1,0 +1,17 @@
+[INFO ] 09:16:31.988 c.a.service.ServiceApplicationTests - Starting ServiceApplicationTests using Java 17.0.2 on DESKTOP-GGBHVPK with PID 8084 (started by kouydong in C:\project\service)
+[INFO ] 09:16:31.988 c.a.service.ServiceApplicationTests - The following 1 profile is active: "prod"
+[INFO ] 09:16:32.376 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 09:16:32.392 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+[INFO ] 09:16:32.755 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 09:16:32.934 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 09:16:32.973 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 09:16:33.004 org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+[INFO ] 09:16:33.144 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[INFO ] 09:16:33.254 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+[INFO ] 09:16:33.410 o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 09:16:33.426 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 09:16:33.582 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 09:16:34.066 c.a.service.ServiceApplicationTests - Started ServiceApplicationTests in 2.305 seconds (JVM running for 3.124)
+[INFO ] 09:16:34.285 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 09:16:34.285 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 09:16:34.300 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
